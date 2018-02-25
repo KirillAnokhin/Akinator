@@ -1,0 +1,8 @@
+digraph dump {
+    node [shape = record];
+30375952 [shape = record, label = "{CHLEN}"];
+30375952 -> 30376016
+30376016 [shape = record, label = "{ZALUPA}"];
+30376048 [shape = record, label = "{PINGAS}"];
+30375952 -> 30376048
+}
