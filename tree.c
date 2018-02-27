@@ -6,12 +6,15 @@
 
 int node_create()
 {
-    node *n = (node*) calloc(1, sizeof(node));
-    assert(n);
-    return n;
+        node_t *n = (node_t*) calloc(1, sizeof(node_t));
+        assert(n);
+        return n;
 }
 
-int node_set(node *n, char *str)
+
+
+
+int node_set(node_t *n, char *str)
 {
     assert(n);
     assert(str);
@@ -19,30 +22,29 @@ int node_set(node *n, char *str)
     if(!n->data)
         free(n->data);
     n -> data = (char*)calloc(len + 1, sizeof(char));
-    assert(n->data);
-    strncpy(n -> data, str, strlen(str) + 1);
+    strncpy(n -> data, str, len + 1);
     return 0;
 }
 
-node* get_left(node *n)
+node_t* get_left(node_t* n)
 {
     assert(n);
     return n->left;
 }
 
-node* get_right(node *n)
+node_t* get_right(node_t* n)
 {
     assert(n);
     return n->right;
 }
 
-char* get_data(node *n)
+char* get_data(node_t* n)
 {
     assert(n);
     return n -> data;
 }
 
-int set_left(node *n, node *left)
+int set_left(node_t *n, node_t *left)
 {
     assert(n);
     assert(left);
@@ -51,7 +53,7 @@ int set_left(node *n, node *left)
 }
 
 
-int set_right(node *n, node *right)
+int set_right(node_t *n, node_t *right)
 {
     assert(n);
     assert(right);
@@ -59,7 +61,7 @@ int set_right(node *n, node *right)
     return 0;
 }
 
-int add_subnodes(node *n)
+int add_subnodes(node_t *n)
 {
     assert(n);
     n -> left  = node_create();
@@ -67,7 +69,7 @@ int add_subnodes(node *n)
     return 0;
 }
 
-int tree_dot_dump(node* n)
+int tree_dot_dump(node_t* n)
 {
     assert(n);
     FILE* dot = fopen("dumptext.dot", "w");
@@ -80,7 +82,7 @@ int tree_dot_dump(node* n)
     return 0;
 }
 
-int tree_dot_dump_rec(node* n, FILE* output)
+int tree_dot_dump_rec(node_t* n, FILE* output)
 {
     assert(n);
     fprintf(output, "%d [shape = record, label = \"{%s}\"];\n", n, n -> data);
@@ -94,5 +96,18 @@ int tree_dot_dump_rec(node* n, FILE* output)
         tree_dot_dump_rec(n -> right, output);
         fprintf(output, "%d -> %d\n", n, n -> right);
     }
+    return 0;
+}
+
+int print_tree(node_t* n, FILE *out)
+{
+
+
+
+    if(n -> left != NULL)
+        print_tree(n -> left, out);
+    if(n -> right != NULL)
+        print_tree(n -> right, out);
+//    fprintf(")");
     return 0;
 }

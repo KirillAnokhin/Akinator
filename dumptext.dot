@@ -1,8 +1,12 @@
 digraph dump {
     node [shape = record];
-30375952 [shape = record, label = "{CHLEN}"];
-30375952 -> 30376016
-30376016 [shape = record, label = "{ZALUPA}"];
-30376048 [shape = record, label = "{PINGAS}"];
-30375952 -> 30376048
+37113872 [shape = record, label = "{MIPT}"];
+37113872 -> 37113936
+37113936 [shape = record, label = "{FROG}"];
+37113968 [shape = record, label = "{pussy}"];
+37113968 -> 37114064
+37114064 [shape = record, label = "{KOT}"];
+37114096 [shape = record, label = "{poltorashka}"];
+37113968 -> 37114096
+37113872 -> 37113968
 }
