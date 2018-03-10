@@ -3,12 +3,13 @@
 #include <string.h>
 #include <assert.h>
 #include "tree.h"
+#define BUF_SIZE 30
 
-int node_create()
+node_t* node_create()
 {
-        node_t *n = (node_t*) calloc(1, sizeof(node_t));
-        assert(n);
-        return n;
+    node_t *n = (node_t*) calloc(1, sizeof(node_t));
+    assert(n);
+    return n;
 }
 
 
@@ -101,13 +102,62 @@ int tree_dot_dump_rec(node_t* n, FILE* output)
 
 int print_tree(node_t* n, FILE *out)
 {
-
+    fprintf(out, "(\"%s\"", n -> data);
 
 
     if(n -> left != NULL)
+    {
         print_tree(n -> left, out);
+    }
     if(n -> right != NULL)
+    {
         print_tree(n -> right, out);
-//    fprintf(")");
+    }
+    fprintf(out,")" );
+
     return 0;
+}
+
+node_t* read_tree(char **cur)
+{
+    char str[BUF_SIZE] = {};
+    int i = 0;
+    node_t *n = node_create();
+
+    while(1)
+    {
+        assert(*cur);
+        if(**cur == '\"')
+            break;
+        (*cur)++;
+    }
+    (*cur)++;
+    while(**cur != '\"')
+    {
+        str[i] = **cur;
+        (*cur)++;
+        i++;
+    }
+    node_set(n, str);
+    (*cur)++;
+    while(1)
+    {
+        if(**cur == ')')
+        {
+            (*cur)++;
+            return n;
+        }
+        if(**cur == '(')
+        {
+            set_left(n, read_tree(cur));
+            set_right(n, read_tree(cur));
+            if(**cur == ')')
+            {
+                (*cur)++;
+                return n;
+            }
+        }
+        (*cur)++;
+    }
+    return n;
 }
