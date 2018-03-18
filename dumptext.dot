@@ -1,92 +1,92 @@
 digraph dump {
     node [shape = record];
-28477088 [shape = record, label = "{meow?}"];
-28477088 -> 28477152
-28477152 [shape = record, label = "{green?}"];
-28477152 -> 28477216
-28477216 [shape = record, label = "{moo?}"];
-28477216 -> 28477280
-28477280 [shape = record, label = "{water animal?}"];
-28477280 -> 28477344
-28477344 [shape = record, label = "{without mass?}"];
-28477344 -> 28477408
-28477408 [shape = record, label = "{bird?}"];
-28477408 -> 28477472
-28477472 [shape = record, label = "{student?}"];
-28477472 -> 28477536
-28477536 [shape = record, label = "{animal?}"];
-28477536 -> 28477600
-28477600 [shape = record, label = "{labnik?}"];
-28477600 -> 28477664
-28477664 [shape = record, label = "{Bek}"];
-28477728 [shape = record, label = "{Ipatov}"];
-28477600 -> 28477728
-28477792 [shape = record, label = "{squirrel}"];
-28477536 -> 28477792
-28477856 [shape = record, label = "{bodybuilder?}"];
-28477856 -> 28477920
-28477920 [shape = record, label = "{guitar fan?}"];
-28477920 -> 28477984
-28477984 [shape = record, label = "{Jenya}"];
-28478048 [shape = record, label = "{Roma}"];
-28477920 -> 28478048
-28478112 [shape = record, label = "{Bashir}"];
-28477856 -> 28478112
-28477472 -> 28477856
-28478176 [shape = record, label = "{penguin}"];
-28477408 -> 28478176
-28478240 [shape = record, label = "{photon}"];
-28477344 -> 28478240
-28478304 [shape = record, label = "{clever?}"];
-28478304 -> 28478368
-28478368 [shape = record, label = "{liquid?}"];
-28478368 -> 28478432
-28478432 [shape = record, label = "{big?}"];
-28478432 -> 28478496
-28478496 [shape = record, label = "{fish}"];
-28478560 [shape = record, label = "{whale}"];
-28478432 -> 28478560
-28478624 [shape = record, label = "{octopus}"];
-28478368 -> 28478624
-28478688 [shape = record, label = "{dolphin}"];
-28478304 -> 28478688
-28477280 -> 28478304
-28478752 [shape = record, label = "{cow}"];
-28477216 -> 28478752
-28478816 [shape = record, label = "{quaa?}"];
-28478816 -> 28478880
-28478880 [shape = record, label = "{garden plant?}"];
-28478880 -> 28478944
-28478944 [shape = record, label = "{annoying?}"];
-28478944 -> 28479008
-28479008 [shape = record, label = "{tasty?}"];
-28479008 -> 28479072
-28479072 [shape = record, label = "{a student?}"];
-28479072 -> 28479136
-28479136 [shape = record, label = "{crocodile}"];
-28479200 [shape = record, label = "{ka bear?}"];
-28479200 -> 28479264
-28479264 [shape = record, label = "{Seva}"];
-28479328 [shape = record, label = "{Vanya}"];
-28479200 -> 28479328
-28479072 -> 28479200
-28479392 [shape = record, label = "{green tea}"];
-28479008 -> 28479392
-28479456 [shape = record, label = "{written by Bek?}"];
-28479456 -> 28479520
-28479520 [shape = record, label = "{zadachnik mataan}"];
-28479584 [shape = record, label = "{zadachnik linaal}"];
-28479456 -> 28479584
-28478944 -> 28479456
-28479648 [shape = record, label = "{bush}"];
-28478880 -> 28479648
-28479712 [shape = record, label = "{frog}"];
-28478816 -> 28479712
-28477152 -> 28478816
-28479776 [shape = record, label = "{small?}"];
-28479776 -> 28479840
-28479840 [shape = record, label = "{cat}"];
-28479904 [shape = record, label = "{kitten}"];
-28479776 -> 28479904
-28477088 -> 28479776
+24565408 [shape = record, label = "{meow?}"];
+24565408 -> 24565488
+24565488 [shape = record, label = "{green?}"];
+24565488 -> 24565568
+24565568 [shape = record, label = "{moo?}"];
+24565568 -> 24565648
+24565648 [shape = record, label = "{water animal?}"];
+24565648 -> 24565728
+24565728 [shape = record, label = "{without mass?}"];
+24565728 -> 24565808
+24565808 [shape = record, label = "{bird?}"];
+24565808 -> 24565888
+24565888 [shape = record, label = "{student?}"];
+24565888 -> 24565968
+24565968 [shape = record, label = "{animal?}"];
+24565968 -> 24566048
+24566048 [shape = record, label = "{labnik?}"];
+24566048 -> 24566128
+24566128 [shape = record, label = "{Bek}"];
+24566208 [shape = record, label = "{Ipatov}"];
+24566048 -> 24566208
+24566288 [shape = record, label = "{squirrel}"];
+24565968 -> 24566288
+24566368 [shape = record, label = "{bodybuilder?}"];
+24566368 -> 24566448
+24566448 [shape = record, label = "{guitar fan?}"];
+24566448 -> 24566528
+24566528 [shape = record, label = "{Jenya}"];
+24566608 [shape = record, label = "{Roma}"];
+24566448 -> 24566608
+24566688 [shape = record, label = "{Bashir}"];
+24566368 -> 24566688
+24565888 -> 24566368
+24566768 [shape = record, label = "{penguin}"];
+24565808 -> 24566768
+24566848 [shape = record, label = "{photon}"];
+24565728 -> 24566848
+24566928 [shape = record, label = "{clever?}"];
+24566928 -> 24567008
+24567008 [shape = record, label = "{liquid?}"];
+24567008 -> 24567088
+24567088 [shape = record, label = "{big?}"];
+24567088 -> 24567168
+24567168 [shape = record, label = "{fish}"];
+24567248 [shape = record, label = "{whale}"];
+24567088 -> 24567248
+24567328 [shape = record, label = "{octopus}"];
+24567008 -> 24567328
+24567408 [shape = record, label = "{dolphin}"];
+24566928 -> 24567408
+24565648 -> 24566928
+24567488 [shape = record, label = "{cow}"];
+24565568 -> 24567488
+24567568 [shape = record, label = "{quaa?}"];
+24567568 -> 24567648
+24567648 [shape = record, label = "{garden plant?}"];
+24567648 -> 24567728
+24567728 [shape = record, label = "{annoying?}"];
+24567728 -> 24567808
+24567808 [shape = record, label = "{tasty?}"];
+24567808 -> 24567888
+24567888 [shape = record, label = "{a student?}"];
+24567888 -> 24567968
+24567968 [shape = record, label = "{crocodile}"];
+24568048 [shape = record, label = "{ka bear?}"];
+24568048 -> 24568128
+24568128 [shape = record, label = "{Seva}"];
+24568208 [shape = record, label = "{Vanya}"];
+24568048 -> 24568208
+24567888 -> 24568048
+24568288 [shape = record, label = "{green tea}"];
+24567808 -> 24568288
+24568368 [shape = record, label = "{written by Bek?}"];
+24568368 -> 24568448
+24568448 [shape = record, label = "{zadachnik mataan}"];
+24568528 [shape = record, label = "{zadachnik linaal}"];
+24568368 -> 24568528
+24567728 -> 24568368
+24568608 [shape = record, label = "{bush}"];
+24567648 -> 24568608
+24568688 [shape = record, label = "{frog}"];
+24567568 -> 24568688
+24565488 -> 24567568
+24568768 [shape = record, label = "{small?}"];
+24568768 -> 24568848
+24568848 [shape = record, label = "{cat}"];
+24568928 [shape = record, label = "{kitten}"];
+24568768 -> 24568928
+24565408 -> 24568768
 }

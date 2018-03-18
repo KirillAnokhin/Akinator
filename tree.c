@@ -12,13 +12,12 @@ node_t* node_create()
     return n;
 }
 
-
-
-
 int node_set(node_t *n, char *str)
 {
     assert(n);
     assert(str);
+    if(n -> data != NULL)
+        free(n -> data);
     int len = strlen(str);
     if(!n->data)
         free(n->data);
@@ -39,6 +38,12 @@ node_t* get_right(node_t* n)
     return n->right;
 }
 
+node_t* get_parent(node_t* n)
+{
+    assert(n);
+    return n->parent;
+}
+
 char* get_data(node_t* n)
 {
     assert(n);
@@ -50,15 +55,24 @@ int set_left(node_t *n, node_t *left)
     assert(n);
     assert(left);
     n->left = left;
+    left-> parent = n;
     return 0;
 }
-
 
 int set_right(node_t *n, node_t *right)
 {
     assert(n);
     assert(right);
     n->right = right;
+    right-> parent = n;
+    return 0;
+}
+
+int set_parent(node_t *n, node_t *parent)
+{
+    assert(n);
+    assert(parent);
+    n->parent = parent;
     return 0;
 }
 
@@ -97,6 +111,14 @@ int tree_dot_dump_rec(node_t* n, FILE* output)
         tree_dot_dump_rec(n -> right, output);
         fprintf(output, "%d -> %d\n", n, n -> right);
     }
+    return 0;
+}
+
+int node_free(node_t* n)
+{
+    assert(n);
+    assert(n -> data);
+    free(n -> data);
     return 0;
 }
 
